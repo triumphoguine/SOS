@@ -1,0 +1,122 @@
+/* General Styles */
+/* Import Makalo Font and Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Makalo&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: white;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%; /* Center within the page */
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+  
+  /* Left Section */
+  .left-section {
+    background-color: #8B4513;
+    color: white;
+    width: 40%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  
+  .left-section h1 {
+    font-size: 2.8rem;
+    font-family: 'Impact', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .left-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  /* Right Section */
+  .right-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #000000; /* Set background to black */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 1; /* Fully visible */
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Vertical Line */
+  .vertical-line {
+    width: 2px;
+    background-color: #808080; /* Grey */
+    margin: 0 20px;
+  }
+  
+  /* Footer Section */
+  .footer {
+    text-align: left;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  .footer h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .footer h2 span {
+    font-family: 'Impact', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  

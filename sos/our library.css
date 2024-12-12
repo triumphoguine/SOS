@@ -1,0 +1,214 @@
+/* Import Makalo Font and Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Makalo&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* General Styles */
+body {
+    font-family: 'Makalo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header and Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: black;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    color: #743A17;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 7rem 2rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+.hero .image-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin: 3rem 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn {
+    padding: 1.5rem 3rem;
+    background-color: #743A17;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #333333;
+}
+
+/* Stories Section */
+.stories {
+    padding: 5rem 3rem;
+    background-color: #000000;
+    color: #333333;
+}
+
+.stories h2 {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    color: #EF8B34;
+    text-decoration-line: underline;
+}
+
+.story {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 3rem;
+}
+
+.story .number {
+    font: MAKALO;
+    font-size: 250px;
+    font-weight: bold;
+    color: #EF8B34;
+    margin-right: 2rem;
+    flex: 0 0 auto;
+    line-height: 300px;
+    width: 220px;
+    height: 338px;
+    top: 937px;
+    left: 100px;
+}
+
+.story .text {
+    flex: 2;
+    padding-right: 1.5rem;
+}
+
+.story .text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.story .text p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.story .text a {
+    color: #EF8B34;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.story .text a:hover {
+    color: #333333;
+}
+
+.story .image {
+    flex: 1;
+}
+
+.story .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 3rem;
+    text-align: left;
+}
+
+.footer-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.subscribe {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.subscribe p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    margin: 0 1.5rem;
+    display: inline-block;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff9800;
+}

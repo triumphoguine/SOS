@@ -1,0 +1,240 @@
+/* Import Makalo Font and Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Makalo&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  /*border-bottom: 1px solid #444;*/
+  position: relative; /* Allow absolute positioning of hamburger */
+}
+
+.left-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Connect Section */
+.connect {
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.connect p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.connect .line {
+  width: 15%;
+  height: 1px;
+  background-color: #fff;
+  margin: 0.5rem 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Main Container for Side-by-Side Layout */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+  padding-right: 10rem;
+  gap: 2rem;
+}
+
+/* Left Section: Welcome */
+.welcome {
+  flex: 1;
+  text-align: left;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+}
+
+.welcome h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+/* Right Section: Cards */
+.cards {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: #222;
+  border-radius: 0px;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card.red {
+  border-color: #EA3323;
+  background: #EA3323;
+}
+
+.card.orange {
+  border-color: #e67e22;
+  background: #e67e22;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Mobile View (smaller screens) */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Header: Stack the items vertically on mobile */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+  }
+
+  nav ul li {
+    margin: 1rem 0;
+  }
+
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  /* Show the hamburger menu */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* When active, display the menu */
+  nav.active ul {
+    display: flex;
+  }
+
+  .logo {
+    margin-bottom: 0.5rem;
+  }
+}
